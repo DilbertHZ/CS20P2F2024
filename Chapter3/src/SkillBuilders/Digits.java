@@ -15,7 +15,7 @@ public class Digits {
 		
 		int ones = number % 10;
 		
-		System.out.print("Tens; " + tens + " Ones: " + ones);
+		System.out.print("Tens: " + tens + " Ones: " + ones);
 		
 		
 	}
