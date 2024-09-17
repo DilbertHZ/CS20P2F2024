@@ -1,10 +1,14 @@
 package Mastery;
 
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class ProjectMastery {
 
+	public static final DecimalFormat dfZero = new DecimalFormat("0.00");
+	
 	public static void main(String[] args) {
+	
 		
 		Scanner userInput = new Scanner(System.in);
 		
@@ -20,16 +24,18 @@ public class ProjectMastery {
 		System.out.print("Testing: ");
 		int test = userInput.nextInt();
 		
-		double designprcnt = ( (double) design / (design + code + debug + test)) * 100;
-		double codeprcnt = ( (double) code / (design + code + debug + test)) * 100;	
-		double debugprcnt = ( (double) debug / (design + code + debug + test)) * 100;	
-		double testprcnt = ( (double) test / (design + code + debug + test)) * 100;
+		int totalTime = design + code + debug + test;
+		
+		double designprcnt = ( (double) design / (totalTime)) * 100;
+		double codeprcnt = ( (double) code / (totalTime)) * 100;	
+		double debugprcnt = ( (double) debug / (totalTime)) * 100;	
+		double testprcnt = ( (double) test / (totalTime)) * 100;
 
-		System.out.println("Task     % Time");
-		System.out.println("Designing" + designprcnt);
-		System.out.println("Coding" + codeprcnt);
-		System.out.println("Debugging" + debugprcnt);
-		System.out.print("Testing" + testprcnt);
+		System.out.println("Task        % Time");
+		System.out.println("Designing   " + dfZero.format(designprcnt));
+		System.out.println("Coding      " + dfZero.format(codeprcnt));
+		System.out.println("Debugging   " + dfZero.format(debugprcnt));
+		System.out.print("Testing     " + dfZero.format(testprcnt));
 	}
 
 }
