@@ -5,10 +5,9 @@ import java.text.DecimalFormat;
 
 public class ProjectMastery {
 
-	public static final DecimalFormat dfZero = new DecimalFormat("0.00");
+	public static DecimalFormat round = new DecimalFormat("0.00");
 	
 	public static void main(String[] args) {
-	
 		
 		Scanner userInput = new Scanner(System.in);
 		
@@ -30,12 +29,13 @@ public class ProjectMastery {
 		double codeprcnt = ( (double) code / (totalTime)) * 100;	
 		double debugprcnt = ( (double) debug / (totalTime)) * 100;	
 		double testprcnt = ( (double) test / (totalTime)) * 100;
-
-		System.out.println("Task        % Time");
-		System.out.println("Designing   " + dfZero.format(designprcnt));
-		System.out.println("Coding      " + dfZero.format(codeprcnt));
-		System.out.println("Debugging   " + dfZero.format(debugprcnt));
-		System.out.print("Testing     " + dfZero.format(testprcnt));
+		
+		System.out.println("\nTotal time spent: " + totalTime + " minutes.");
+		System.out.println("\nTask        % Time");
+		System.out.println("Designing   " + round.format(designprcnt) + "%");
+		System.out.println("Coding      " + round.format(codeprcnt) + "%");
+		System.out.println("Debugging   " + round.format(debugprcnt) + "%");
+		System.out.print("Testing     " + round.format(testprcnt) + "%");
 	}
 
 }
