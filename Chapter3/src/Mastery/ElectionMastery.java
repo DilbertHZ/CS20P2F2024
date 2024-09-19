@@ -24,7 +24,7 @@ public class ElectionMastery {
 		int NJM = userInput.nextInt();
 		
 		
-		System.out.println("\nElection Results for New Connecticut:");
+		System.out.println("\nElection Results for Connecticut:");
 		System.out.print("Awbrey: ");
 		int CA = userInput.nextInt();
 		System.out.print("Martinez: ");
