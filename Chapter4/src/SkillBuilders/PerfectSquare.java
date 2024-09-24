@@ -1,6 +1,6 @@
-/* Program: Delivery.java          Last Date of this Revision: September 23, 2024
+/* Program: PerfectSquare.java          Last Date of this Revision: September 24, 2024
 
-Purpose: An application that checks if all of the provided dimensions are less than 10
+Purpose: An application that checks if a number is a perfect square or not
 
 Author: Hunter Zahn, 
 School: CHHS
@@ -22,12 +22,13 @@ public class PerfectSquare {
 		System.out.print("Enter whole number: ");
 		int num = userInput.nextInt();
 		
-		//Square root inputed number
+		//Square root the inputed number
 		double root = Math.sqrt(num);
 		
-		//
+		//Square the number which was previously rooted, and record int value
 		int square = (int)Math.pow((int)root, 2);
 		
+		//Checks if the squared number = inputed number, if it is equal then it is a perfect square
 		if (num == square) {
 			System.out.print(num + " Is a perfect square");
 		} else {
