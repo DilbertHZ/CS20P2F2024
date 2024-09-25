@@ -12,11 +12,17 @@ package Mastery;
 import java.util.Scanner;
 
 public class MathTutor {
+	
+	
 
 	public static void main(String[] args) {
 		
 		//Preparing for user input
 		Scanner userInput = new Scanner(System.in);
+		
+		//Variable declaration
+		double ans = 0;
+		String operator = " ";
 		
 		//Calculates both random numbers
 		int num1 = (int)((10 - 1 + 1) * Math.random() + 1);
@@ -28,53 +34,43 @@ public class MathTutor {
 		//Decides on operator 
 		if (rand == 1) {
 			//Calculates the answer for addition 
-			double ans = (num1 + num2);
-			//Prints equation and prompts for user input
-			System.out.print(num1 + " + " + num2 + " : ");
-			//Records user input
-			double user = userInput.nextInt();
-			//Checks if user input = correct answer
-			if (user == ans) {
-				//Prints if correct
-				System.out.print("Correct!");
-			} else {
-				//Prints if incorrect
-				System.out.print("Incorrect, the correct answer was " + ans);
-			}
+			ans = (num1 + num2);
+			//Declares addition operator
+			operator = "+"; 
 		} else if (rand == 2) {
 			//Calculates the answer for subtraction 
-			double ans = (num1 - num2);
-			System.out.print(num1 + " - " + num2 + " : ");
-			double user = userInput.nextInt();
-			if (user == ans) {
-				System.out.print("Correct!");
-			} else {
-				System.out.print("Incorrect, the correct answer was " + ans);
-			}
+			ans = (num1 - num2);
+			//Declares subtraction operator
+			operator = "-"; 
 		} else if (rand == 3) {
 			//Calculates the answer for multiplication 
-			double ans = (num1 * num2);
-			System.out.print(num1 + " * " + num2 + " : ");
-			double user = userInput.nextInt();
-			if (user == ans) {
-				System.out.print("Correct!");
-			} else {
-				System.out.print("Incorrect, the correct answer was " + ans);
-			}
+			ans = (num1 * num2);
+			//Declares multiplication operator
+			operator = "*"; 
 		} else if (rand == 4) {
 			//Calculates the answer for division 
-			double ans = ((double) num1 / num2);
-			System.out.print(num1 + " / " + num2 + " : ");
-			double user = userInput.nextDouble();
-			if (user == ans) {
-				System.out.print("Correct!");
-		} else {
-			System.out.print("Incorrect, the correct answer was " + ans);
+			ans =((double) num1 / num2);
+			ans = Math.round(ans * 100) / 100.0;
+			//Declares division operator
+			operator = "/"; 
 		}
+		
+		System.out.print(num1 + operator + num2 + ": ");
+			
+		//Records user input
+		double user = userInput.nextDouble();
+		//Checks if user input = correct answer
+		if (user == ans) {
+			//Prints if correct
+			System.out.print("Correct!");
+		} else {
+			//Prints if incorrect
+			System.out.print("Incorrect, the correct answer was " + ans);
+			}
+
 
 	}
 
-	}
 }
 
 /*Screen Dump
