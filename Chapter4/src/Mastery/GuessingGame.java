@@ -18,20 +18,24 @@ public class GuessingGame {
 		//Preparing for user input
 		Scanner userInput = new Scanner(System.in);
 		
-		//Calculates both random numbers
+		//Calculates random number
 		int num = (int)((20 - 1 + 1) * Math.random() + 1);
 		
 		//Prompt and record user input
 		System.out.print("Enter a number between 1 and 20: ");
 		int user = userInput.nextInt();
 		
+		//Prints the random number and the users number
 		System.out.println("Computer's Number: " + num);
 		System.out.println("Player's Number: " + user);
 		
+		//Checks if they are the same number
 		if (num == user) {
+			//Prints winning statement if they are the same 
 			System.out.print("You won!");
 		}
 		else {
+			//Prints losing statement if they are different 
 			System.out.print("Better luck next time.");
 		}
 	}
