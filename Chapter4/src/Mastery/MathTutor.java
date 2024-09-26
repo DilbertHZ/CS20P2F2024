@@ -1,4 +1,4 @@
-/* Program: MathTutor.java          Last Date of this Revision: September 24, 2024
+/* Program: MathTutor.java          Last Date of this Revision: September 25, 2024
 
 Purpose: An application that functions as a math tutor that will give random problems
 
@@ -12,8 +12,6 @@ package Mastery;
 import java.util.Scanner;
 
 public class MathTutor {
-	
-	
 
 	public static void main(String[] args) {
 		
