@@ -7,11 +7,11 @@ School: CHHS
 Course: Computer Programming 20
 */
 
-package SkillBuilders;
+package Mastery;
 
 import java.util.Scanner;
 
-public class OddSum {
+public class PrimeNumberPartA {
 
 	public static void main(String[] args) {
 		
@@ -21,23 +21,23 @@ public class OddSum {
 		//Prompt and record the user for
 		System.out.print("Enter an integer value: ");
 		int number = userInput.nextInt();
-			
-		int total = 0;
-		int count = 1;
-			
-		while (count <= number) {
-			if (count % 2 != 0) {
-				System.out.println(count);
-				total += count;
-				count+=2;
+
+		boolean prime = false;
+				
+		for (int count=2; count <= (number - 1); count++) {
+			if (number % count == 0) {	
+				System.out.print("Number isn't prime");
+				prime = false;
+				break;
 			} else {
-				count+=2;
+				prime = true;
 			}
-			
 		}
-
-		System.out.println("Total: " + total);
-
+		
+		if (prime == true || number == 2 || number == 1) {
+			System.out.print("Number is prime");
+		}
+		
 	}
 
 }
