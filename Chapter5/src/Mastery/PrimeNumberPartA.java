@@ -1,6 +1,6 @@
-/* Program: Evens.java          Last Date of this Revision: October 3, 2024
+/* Program: PrimeNumberPartA.java          Last Date of this Revision: October 7, 2024
 
-Purpose: An application that displays the even numbers between 1 and 20.
+Purpose: An application that checks and displays if a number is prime or not.
 
 Author: Hunter Zahn, 
 School: CHHS
@@ -22,21 +22,22 @@ public class PrimeNumberPartA {
 		System.out.print("Enter an integer value: ");
 		int number = userInput.nextInt();
 
-		boolean prime = false;
-				
+		boolean prime = true;
+		
 		for (int count=2; count <= (number - 1); count++) {
 			if (number % count == 0) {	
-				System.out.print("Number isn't prime");
 				prime = false;
 				break;
 			} else {
-				prime = true;
 			}
 		}
 		
-		if (prime == true || number == 2 || number == 1) {
+		if (prime == false) {
+			System.out.print("Number isn't prime");
+		} else if (prime == true) {
 			System.out.print("Number is prime");
 		}
+		
 		
 	}
 
