@@ -28,11 +28,13 @@ public class PrimeNumberPartA {
 			if (number % count == 0) {	
 				prime = false;
 				break;
-			} else {
+			} else if (number == 2){
+				prime = true;
+				break;
 			}
 		}
 		
-		if (prime == false) {
+		if (prime == false || number == 1) {
 			System.out.print("Number isn't prime");
 		} else if (prime == true) {
 			System.out.print("Number is prime");
