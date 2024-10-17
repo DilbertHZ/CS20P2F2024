@@ -7,22 +7,20 @@ School: CHHS
 Course: Computer Programming 20
 */
 
-package SkillBuilders;
+package Mastery;
 
 import java.util.Scanner;
 
 public class MetricConversion {
 
-	static void inToCm() {
+	static double inToCm() {
 
 		
 		double centimeters;
 		
-		number;
+		centimeters = number * 2.54;
 		
-		centimeters = inches * 2.54;
-		
-		System.out.print(inches + " inches equals " + centimeters + " centimeters.");
+		System.out.print(number + " inches equals " + centimeters + " centimeters.");
 	}
 	
 	static void cmToIn() {
@@ -115,8 +113,8 @@ public class MetricConversion {
 		System.out.print("Enter a number: ");
 		int number = userInput.nextInt();
 		
-		System.out.print("Enter a number: ");
-		int number = userInput.nextInt();
+		System.out.print("Enter a operator: ");
+		int operator = userInput.nextInt();
 		
 	}
 
