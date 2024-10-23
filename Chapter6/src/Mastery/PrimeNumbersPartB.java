@@ -4,13 +4,14 @@ import java.util.Scanner;
 
 public class PrimeNumbersPartB {
 
-	public boolean isPrime(int number, int count) {
+	public static boolean isPrime(double number, double count) {
 				
 			if (number % count == 0) {	
 				return false;
 			}
-		}
-		return true;
+			else {
+				return true;
+			}
 	}
 	
 	public static void main(String[] args) {
@@ -20,11 +21,20 @@ public class PrimeNumbersPartB {
 
 		//Prompt and record the user for
 		System.out.print("Enter an integer value: ");
-		int number = userInput.nextInt();
+		double number = userInput.nextInt();
 
-		for (int count=2; count <= (number - 1); count++) {
-			isPrime();
+		double count= 2;
 		
+		while(count <= (number - 1)) {
+			System.out.print(isPrime(number, count));
+			count++;
+		}
+		if (isPrime(number, count)) {
+			System.out.print("Is prime");
+		} else {
+			System.out.print("Isn't prime");
+		}
+	
 	}
-
+	
 }
