@@ -39,9 +39,18 @@ public class GuessingGamePartA {
 			}
 		}
 				
-		
-
-
 	}
 
 }
+
+/*Screen Dump
+
+Test Case 1:
+Enter a number between 1 and 20: 1
+Try again.
+Enter a number between 1 and 20: 2
+Try again.
+Enter a number between 1 and 20: 3
+You won!
+
+*/

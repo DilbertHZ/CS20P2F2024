@@ -206,3 +206,45 @@ public class MetricConversion {
 	}
 
 }
+
+/*Screen Dump
+
+Test Case 1:
+1. Inches > Centimeters
+2. Centimeters > Inches
+3. Feet > Centimeters
+4. Centimeters > Feet
+5. Yards > Meters
+6. Meters > Yards
+7. Miles > Kilometers
+8. Kilometers > Miles
+Enter a operator: 1
+Enter number of inches: 5
+5.0 inches equals 12.7 centimeters.
+
+Test Case 2:
+1. Inches > Centimeters
+2. Centimeters > Inches
+3. Feet > Centimeters
+4. Centimeters > Feet
+5. Yards > Meters
+6. Meters > Yards
+7. Miles > Kilometers
+8. Kilometers > Miles
+Enter a operator: 5
+Enter number of yards: 17
+17.0 yards equals 15.47 meters.
+
+Test Case 3:
+1. Inches > Centimeters
+2. Centimeters > Inches
+3. Feet > Centimeters
+4. Centimeters > Feet
+5. Yards > Meters
+6. Meters > Yards
+7. Miles > Kilometers
+8. Kilometers > Miles
+Enter a operator: 8
+Enter number of kilometers: 2
+2.0 kilometers equals 1.25 miles.
+*/

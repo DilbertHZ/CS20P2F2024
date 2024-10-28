@@ -37,8 +37,8 @@ public class PrimeNumbersPartB {
 			count++;
 		}
 		
-		//Checks if the method returns true, and prints appropriate response
-		if (isPrime(number, count)) {
+		//Checks if the method returns true or the number is one, and prints appropriate response
+		if (isPrime(number, count) || number == 1) {
 			System.out.print("Isn't prime");
 		} else {
 			System.out.print("Is prime");
@@ -47,3 +47,15 @@ public class PrimeNumbersPartB {
 	}
 	
 }
+
+/*Screen Dump
+
+Test Case 1:
+Enter an integer value: 7
+Is prime
+
+Test Case 2:
+Enter an integer value: 9
+Isn't prime
+
+*/

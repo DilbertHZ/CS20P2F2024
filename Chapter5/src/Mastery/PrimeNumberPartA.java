@@ -22,21 +22,25 @@ public class PrimeNumberPartA {
 		System.out.print("Enter an integer value: ");
 		int number = userInput.nextInt();
 
+		//Declaration
 		boolean prime = true;
 		
-		for (int count=2; count <= (number - 1); count++) {
+		//Loops an if else statement and increments count by 1 while the
+		//count is less than or equal to 2 less than the inputed number
+		for (int count=2; count <= (number - 2); count++) {
+			//Checks if the modulo of the number is zero
 			if (number % count == 0) {	
+				//Declares the number as not prime and breaks loop
 				prime = false;
-				break;
-			} else if (number == 2){
-				prime = true;
 				break;
 			}
 		}
 		
+		//Checks if the number is prime or is 1
 		if (prime == false || number == 1) {
+			//Prints according statement
 			System.out.print("Number isn't prime");
-		} else if (prime == true) {
+		} else {
 			System.out.print("Number is prime");
 		}
 		
@@ -44,3 +48,15 @@ public class PrimeNumberPartA {
 	}
 
 }
+
+/*Screen Dump
+
+Test Case 1:
+Enter an integer value: 9
+Number isn't prime
+
+Test Case 2:
+Enter an integer value: 7
+Number is prime
+
+*/

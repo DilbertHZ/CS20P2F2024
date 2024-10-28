@@ -45,3 +45,14 @@ public class AddCoins {
 	}
 
 }
+
+/*Screen Dump
+
+Test Case 1:
+Enter number of pennies: 6
+Enter number of nickles: 5
+Enter number of dimes: 1
+Enter number of quarters: 3
+$1.23
+
+*/

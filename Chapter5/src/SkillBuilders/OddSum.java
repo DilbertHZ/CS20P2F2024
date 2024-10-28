@@ -1,6 +1,6 @@
-/* Program: Evens.java          Last Date of this Revision: October 3, 2024
+/* Program: OddSum.java          Last Date of this Revision: October 4, 2024
 
-Purpose: An application that displays the even numbers between 1 and 20.
+Purpose: An application that displays sum of every incrementing odd integer up to an inputed integer
 
 Author: Hunter Zahn, 
 School: CHHS
@@ -22,20 +22,28 @@ public class OddSum {
 		System.out.print("Enter an integer value: ");
 		int number = userInput.nextInt();
 			
+		//Declaration
 		int total = 0;
 		int count = 1;
 			
+		//Loops while the count is less than or equal to the number
 		while (count <= number) {
+			//Checks if the count isn't even
 			if (count % 2 != 0) {
+				//Prints the current count
 				System.out.println(count);
+				//Adds the current count to the total
 				total += count;
+				//Increments by two
 				count+=2;
 			} else {
+				//Increments by two
 				count+=2;
 			}
 			
 		}
 
+		//Prints the total
 		System.out.println("Total: " + total);
 
 	}

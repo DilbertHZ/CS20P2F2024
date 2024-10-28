@@ -47,3 +47,21 @@ public class GroupAssignment {
 	}
 
 }
+
+/*Screen Dump
+
+Test Case 1:
+Enter your first name: Hunter
+Enter your last name: Zahn
+Hunter Zahn is assigned to Group 3
+
+Test Case 2:
+Enter your first name: Hunter
+Enter your last name: Jahn
+Hunter Jahn is assigned to Group 2
+
+Test Case 3:
+Enter your first name: Hunter
+Enter your last name: Iahn
+Hunter Iahn is assigned to Group 1
+*/
