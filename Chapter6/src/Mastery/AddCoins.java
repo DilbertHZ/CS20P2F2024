@@ -1,3 +1,12 @@
+/* Program: AddCoins.java          Last Date of this Revision: October 20, 2024
+
+Purpose: An application that combines the total value of a number of coins.
+
+Author: Hunter Zahn, 
+School: CHHS
+Course: Computer Programming 20
+*/
+
 package Mastery;
 
 import java.util.Scanner;

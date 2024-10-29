@@ -33,6 +33,7 @@ public class GuessingGamePartA {
 			if (user == num) {
 				//Prints win statement
 				System.out.println("You won!");
+				break;
 			} else {
 				//Prints incorrect statement
 				System.out.println("Try again.");
@@ -49,7 +50,7 @@ Test Case 1:
 Enter a number between 1 and 20: 1
 Try again.
 Enter a number between 1 and 20: 2
-Try again.
+Try again.	
 Enter a number between 1 and 20: 3
 You won!
 
