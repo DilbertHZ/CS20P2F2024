@@ -4,7 +4,8 @@ public class MySavings {
 	
 	public static double totalValue;
 
-	public static void PiggyBank(int x) {
+	public void PiggyBank(int myObj.x) {
+		
 		switch (x) {
 		case 0: 
 			break;
@@ -22,11 +23,6 @@ public class MySavings {
 			totalValue = 0;
 		}
 	}
-
-	public static void x(int nextInt) {
-		// TODO Auto-generated method stub
-		
-	}
-
+	
 
 }
