@@ -1,3 +1,12 @@
+/* Program: TestDigitExtractor.java          Last Date of this Revision: November 29, 2024
+
+Purpose: An application that can record and display the ones, tens, hundreds, and total of a 3 digit integer.
+
+Author: Hunter Zahn, 
+School: CHHS
+Course: Computer Programming 20
+*/
+
 package Mastery;
 
 import java.util.Scanner;
@@ -50,7 +59,7 @@ public class TestDigitExtractor {
 			
 			//Calls Num Object from DigitExtractor Class with the value and string input
 			DigitExtractor.Num(value, input);
-		
+			
 		}
 		
 	}

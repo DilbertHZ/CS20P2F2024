@@ -1,3 +1,12 @@
+/* Program: TestMySavings.java          Last Date of this Revision: November 29, 2024
+
+Purpose: An application that can add, remove, and display the amount of money in a piggybank.
+
+Author: Hunter Zahn, 
+School: CHHS
+Course: Computer Programming 20
+*/
+
 package Mastery;
 
 import java.util.Scanner;
