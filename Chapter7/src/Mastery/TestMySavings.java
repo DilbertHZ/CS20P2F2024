@@ -4,27 +4,43 @@ import java.util.Scanner;
 
 public class TestMySavings {
 	
-	public static int x;
-	
-	public static void main(String[] args) { 
-		TestMySavings myObj = new TestMySavings();
-		  
-			do {
-				Scanner userInput = new Scanner(System.in);
-				myObj.x = userInput.nextInt();
-
-				//Prompt user for input
-				System.out.println("1. Show total in bank.");
-				System.out.println("2. Add a penny.");
-				System.out.println("3. Add a nickel.");
-				System.out.println("4. Add a dime.");
-				System.out.println("5. Add a quarter.");
-				System.out.println("6. Take money out of bank.");
-				System.out.println("Enter 0 to quit.");
-				System.out.println("Enter your choice: ");
-				
-			} while (myObj.x != 0);
-			
-	
+	//Object that returns user input
+	public static int selection() {
+		@SuppressWarnings("resource")
+		//Prepare for user input
+		Scanner userInput = new Scanner(System.in);
+		//Record user input
+		int choice = userInput.nextInt();
+		//Returns user input
+		return choice;
 	}
+
+	public static void main(String[] args) {
+
+		//Declares original input not as 0, so that the loop can begin
+		int input = 10;
+		
+		//Loops while input is not 0
+		while (input != 0) { 
+			
+			//Prompt user for input
+			System.out.println("1. Show total in bank.");
+			System.out.println("2. Add a penny.");
+			System.out.println("3. Add a nickel.");
+			System.out.println("4. Add a dime.");
+			System.out.println("5. Add a quarter.");
+			System.out.println("6. Take money out of bank.");
+			System.out.println("Enter 0 to quit.");
+			System.out.println("Enter your choice: ");
+			
+			//Declares input variable as selection() object
+			input = selection();
+			
+			//Calls PiggyBank Object from MySavings Class with the input variable
+			MySavings.PiggyBank(input);
+		
+		}
+		
+	}
+		
 }
