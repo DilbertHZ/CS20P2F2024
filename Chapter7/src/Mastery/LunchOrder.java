@@ -12,38 +12,36 @@ package Mastery;
 public class LunchOrder {
 
 	//Declares variables
-	 Double price;
-	 int fat;
-	 int carb;
-	 int fiber;
+	 public Double price;
+	 private int fat;
+	 private int carb;
+	 private int fiber;
 	
-	//
-	LunchOrder(Double price, int fat, int carb, int fiber){
-		
+	//Constructor method
+	 public LunchOrder(Double price, int fat, int carb, int fiber){
 		this.price = price;
 		this.fat = fat;
 		this.carb = carb;
 		this.fiber = fiber;
-			
 	}
 	
 	//Hamburger method to display its macros
-	void Hamburger() {
+	public void Hamburger() {
 		System.out.println("Each hamburger has " + this.fat + "g of fat, " + this.carb + "g of carbs, and " + this.fiber + "g of fiber.");
 	}
 	
 	//Salad method to display its macros
-	void Salad() {
+	public void Salad() {
 		System.out.println("Each salad has " + this.fat + "g of fat, " + this.carb + "g of carbs, and " + this.fiber + "g of fiber.");
 	}
 	
 	//FrenchFries method to display its macros
-	void FrenchFries() {
+	public void FrenchFries() {
 		System.out.println("French fries have " + this.fat + "g of fat, " + this.carb + "g of carbs, and " + this.fiber + "g of fiber.");
 	}
 	
 	//Soda method to display its macros
-	void Soda() {
+	public void Soda() {
 		System.out.println("Each soda has " + this.fat + "g of fat, " + this.carb + "g of carbs, and " + this.fiber + "g of fiber.");
 	}
 	
