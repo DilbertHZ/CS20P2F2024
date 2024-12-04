@@ -9,7 +9,12 @@ Course: Computer Programming 20
 
 package Mastery;
 
+import java.text.DecimalFormat;
+
 public class MySavings {
+	
+	//Decimal format, to round to 2 decimals
+	private static final DecimalFormat df = new DecimalFormat("0.00");
 	
 	//Creates public variable which represents the total value in the piggybank
 	private static double totalValue = 0;
@@ -22,7 +27,7 @@ public class MySavings {
 			break;
 		case 1: 
 			//Prints total value in piggybank
-			System.out.println("You have " + totalValue + " in your piggybank.");
+			System.out.println("You have " + df.format(totalValue) + " in your piggybank.");
 			break;
 		case 2: 
 			//Adds 1 cent to the piggybank

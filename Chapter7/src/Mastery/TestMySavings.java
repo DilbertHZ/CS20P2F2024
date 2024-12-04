@@ -26,12 +26,11 @@ public class TestMySavings {
 
 	public static void main(String[] args) {
 
-		//Declares original input not as 0, so that the loop can begin
-		int input = 10;
+		//Declares input variable
+		int input;
 		
 		//Loops while input is not 0
-		while (input != 0) { 
-			
+		 do { 
 			//Prompt user for input
 			System.out.println("1. Show total in bank.");
 			System.out.println("2. Add a penny.");
@@ -48,7 +47,7 @@ public class TestMySavings {
 			//Calls PiggyBank Object from MySavings Class with the input variable
 			MySavings.PiggyBank(input);
 		
-		}
+		} while (input != 0);
 		
 	}
 		
