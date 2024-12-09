@@ -65,3 +65,45 @@ public class TestDigitExtractor {
 	}
 	
 }
+
+/*Screen Dump
+
+Test Case 1:
+
+Enter an integer: 429
+Show (W)hole number.
+Show (O)nes place number.
+Show (T)ens place number
+Show (H)undreds place number
+(Q)uit.
+Enter your choice: w
+The number is: 429
+Show (W)hole number.
+Show (O)nes place number.
+Show (T)ens place number
+Show (H)undreds place number
+(Q)uit.
+Enter your choice: o
+The ones place digit is: 9
+Show (W)hole number.
+Show (O)nes place number.
+Show (T)ens place number
+Show (H)undreds place number
+(Q)uit.
+Enter your choice: t
+The tens place digit is: 2
+Show (W)hole number.
+Show (O)nes place number.
+Show (T)ens place number
+Show (H)undreds place number
+(Q)uit.
+Enter your choice: h
+The hundreds place digit is: 4
+Show (W)hole number.
+Show (O)nes place number.
+Show (T)ens place number
+Show (H)undreds place number
+(Q)uit.
+Enter your choice: q
+
+*/

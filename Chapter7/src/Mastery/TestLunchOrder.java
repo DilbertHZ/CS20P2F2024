@@ -67,3 +67,23 @@ public class TestLunchOrder {
 	}
 	
 }
+
+/*Screen Dump
+
+Test case 1: 
+
+Enter number of hamburgers: 2
+Each hamburger has 9g of fat, 33g of carbs, and 1g of fiber.
+
+Enter number of salads: 3
+Each salad has 1g of fat, 11g of carbs, and 5g of fiber.
+
+Enter number of fries: 4
+French fries have 11g of fat, 36g of carbs, and 4g of fiber.
+
+Enter number of sodas: 1
+Each soda has 0g of fat, 38g of carbs, and 0g of fiber.
+
+Your order comes to: $15.85
+
+*/
