@@ -1,72 +1,52 @@
+/* Program: EvensAndOdds.java          Last Date of this Revision: December 11, 2024
+
+Purpose: An application that that generates 25 random integers and sorts them based on if they are even or odd.
+
+Author: Hunter Zahn, 
+School: CHHS
+Course: Computer Programming 20
+*/
+
 package Mastery;
 
-import java.util.Scanner;
+import java.util.ArrayList;
 
 public class EvensAndOdds {
-	
-	
-	
-	
 	public static void main(String[] args) {
 		
-		//Preparing for user input
-		Scanner userInput = new Scanner(System.in);
+		//Creates oddNum and evenNum ArrayList objects
+		ArrayList<Integer> oddNum = new ArrayList<Integer>();
+		ArrayList<Integer> evenNum = new ArrayList<Integer>();
 		
-		//Declare arrays
-		int[] combinedNum;
-		int[] oddNum;
-		int[] evenNum;
-		
-		//Allocate space in combinedNum array
-		int count = 25;
-		combinedNum = new int[count];
-		
-		//Declare odd and even count
-		int oddCount = 0;
-		int evenCount = 0;
-		
-		//For loop assigns values to array, and initializes odd and even count 
-		for (int i = 0; i < count; i++) {
-			//Calculates random number
-			int num = (int)((99 - 1 + 1) * Math.random() + 1);
-			//Assigns random number to array
-			combinedNum[i] = num;
-			//Initializes odd and even count
+		//Loops 25 times
+		for (int i = 0; i < 25; i++) {
+			//Generates number between 99 and 0
+			int num = (int)((99 - 0 + 1) * Math.random() + 1);
+			//Checks if number is odd or even
 			if (num  % 2 == 0) {
-				evenCount++;
+				//Adds even number to evenNum object
+				evenNum.add(num);
 			} else {
-				oddCount++;
+				//Adds odd number to oddNum object
+				oddNum.add(num);
 			}
+			
 		}
-		
-		System.out.print("evenCount: " + evenCount);
-		System.out.print("\noddCount: " + oddCount);
-		
-		//Allocate space in oddNum and evenNum arrays
-		oddNum = new int[oddCount];
-		evenNum = new int[evenCount];
-		
-		for (int x = 0; x < count; x++) {
-			if (x % 2 == 0) {
-				evenNum[x] = combinedNum[x];
-			} else {
-				oddNum[x] = combinedNum[x];
-			}
-		}
-		
-		/*System.out.print("Evens: ");
-		for (int element: evenNum) {
-			System.out.print(element + " ");
-		}
-		System.out.print("\nOdds: ");
-		for (int element: oddNum) {
-			System.out.print(element + " ");
-		}
-		System.out.print("\nAll: ");
-		for (int element: combinedNum) {
-			System.out.print(element + " ");
-		}*/
+	
+		//Prints oddNum object
+		System.out.println("ODD:\n" + oddNum);
+		//Prints evenNum object
+		System.out.print("EVEN:\n" + evenNum);
 		
 	}
 	
 }
+
+/*Screen Dump
+
+ODD:
+[57, 1, 91, 3, 37, 81, 49, 67, 71, 19]
+EVEN:
+[80, 30, 94, 84, 72, 48, 30, 46, 36, 34, 52, 16, 58, 98, 62]
+
+*/
