@@ -42,7 +42,7 @@ public class EvensAndOdds {
 	
 }
 
-/*Screen Dump
+/* Screen Dump
 
 ODD:
 [57, 1, 91, 3, 37, 81, 49, 67, 71, 19]
