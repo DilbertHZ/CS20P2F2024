@@ -35,7 +35,7 @@ public class TugOfWar {
         while(redButtonPress < 10 && greenButtonPress < 10){	
 
             if (redState != redButton.getState()) {
-            	if (redState != false || greenState != false) {
+            	if (redState != false) {
             		redButtonPress++;
                 	System.out.println("Red: " +redButtonPress);
                 	
