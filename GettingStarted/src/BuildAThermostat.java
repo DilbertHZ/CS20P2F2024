@@ -33,23 +33,35 @@ public class BuildAThermostat {
         boolean redState = redButton.getState();
         boolean greenState = greenButton.getState();
         
+        while (true) {
+        if (redState != redButton.getState()) {
+        	if (redState != false) {
+        		setTemp--;
+        		System.out.println("Set temp: " + setTemp);
+        	}
+        	redState = redButton.getState();
+
+        } else if (greenState != greenButton.getState()) {
+        	if (greenState != false) {
+        		setTemp++;
+        		System.out.println("Set temp: " + setTemp);
+        	}
+        	greenState = greenButton.getState();
+        	
+        } else if (greenState != greenButton.getState() && redState != redButton.getState()) {
+        	if (greenState != false && redState != false) {
+        		break;
+        	}
+        	redState = redButton.getState();
+        	greenState = greenButton.getState();
+        }
+
+        Thread.sleep(100);
+        }
         
         while(true) {
-        	System.out.println("newloop");
+        	System.out.println("newLoop");
         	currentTemp = temperatureSensor.getTemperature();
-        	
-        	if (redState != redButton.getState()) {
-            	if (redState != false) {
-            		setTemp--;
-            	}
-            	redState = redButton.getState();
-  
-            } else if (greenState != greenButton.getState()) {
-            	if (greenState != false) {
-            		setTemp++;
-            	}
-            	greenState = greenButton.getState();
-            }
              
         	if (currentTemp < (setTemp + 2) && currentTemp > (setTemp - 2)) {
         		greenLED.setState(true);
@@ -62,7 +74,7 @@ public class BuildAThermostat {
         	System.out.println("Current temp: " + currentTemp);
         	System.out.println("Set temp: " + setTemp);
         	
-        	Thread.sleep(1000);
+        	Thread.sleep(10000);
         }
         
 	}
